@@ -1,5 +1,5 @@
 #import "tfconfig"
-import "tfplan/v2" as "tfplan"
+import "tfplan/v2" as tfplan
 param region default "us-east-1"
 tfregion = tfplan.variables.region.value
 
