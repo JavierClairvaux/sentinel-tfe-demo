@@ -2,4 +2,4 @@ import "tfconfig"
 
 param region default "us-east-1"
 
-main = rule { tfconfig.providers.aws.alias.east.config.region is region }
+main = rule { tfconfig.providers.aws.alias.east.config.region matches region }
